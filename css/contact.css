@@ -1,0 +1,21 @@
+.contact-head {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.contact-items {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+.contact-link {
+    color: firebrick;
+    font-weight: bold;
+}
+
+.contact-main {
+    text-align: center;
+    margin: 5%;
+}

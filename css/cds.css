@@ -1,0 +1,47 @@
+.cd-container {
+    display: flex; 
+    margin: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cd-card {
+    width: max-content;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cd-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cd-hdr {
+    margin: 2%;
+    text-align: center;
+}
+
+.cd-info {
+    text-align: center;
+}
+
+.cd-title {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1%;
+}
+
+.cd-contact {
+    margin: 2%;
+}
+
+.cd-link {
+    color: firebrick;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.cd-spotify {
+    margin-top: 1%;
+}

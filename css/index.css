@@ -1,0 +1,23 @@
+.init-content {
+    text-align: center;
+}
+
+.init-info {
+    font-size: 20px;
+    padding: 7.5%;
+}
+
+.init-welcome {
+    padding-top: 5%;
+}
+
+.init-concerts {
+    color: firebrick;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.init-concerts:hover {
+    color: black;
+    text-decoration: underline;
+}

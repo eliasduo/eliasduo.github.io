@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #FAFAFA;
+    /* background-color: #F4F4F4; */
+}
+
+header {
+    background-color: firebrick;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5%;
+}
+
+footer {
+    background-color: firebrick;
+    display: flex;
+    align-items: center;
+    padding: 1.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-item {
+    font-size: 20px;
+    color: white;
+    transition: all 0.3s ease 0s;
+    margin-right: 30px;
+}
+
+.nav-item:hover {
+    color: darkgray;
+}
+
+.brand {
+    transition: all 0.5s ease 0s;
+    cursor: pointer;
+    font-size: 80px;
+    font-family: 'Corinthia', Georgia, monospace;
+    color: #F4F4F4;
+    text-align: center;
+}
+
+.brand:hover {
+    color: darkgray;
+}
+
+.container {
+    display: flex; 
+}
+
+.panel { 
+    display: inline-block;
+    width: 50%;
+    margin: 5%;
+}
+
+.active-item {
+    text-decoration: underline;
+}

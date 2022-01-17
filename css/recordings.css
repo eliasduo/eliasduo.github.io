@@ -1,0 +1,31 @@
+.record-container {
+    display: flex; 
+    margin: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.record-card {
+    width: max-content;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.record-hdr {
+    margin: 2%;
+    text-align: center;
+}
+
+.record-info {
+    text-align: center;
+}
+
+.record-title {
+    font-weight: 600;
+}
+
+audio {
+    margin-bottom: 10%;
+    margin-top: 5%;
+}
