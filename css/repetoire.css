@@ -1,0 +1,38 @@
+.rep-container {
+    display: flex; 
+    margin: 1%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rep-card {
+    width: max-content;
+    padding: 3%;
+    text-align: center;
+}
+
+.rep-table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.rep-hdr {
+    color: firebrick;
+    margin: 2%;
+    text-align: center;
+}
+
+.rep-info {
+    text-align: center;
+}
+
+.rep-title {
+    font-weight: 600;
+    text-align: center;
+    margin: 2%;
+}
+
+td {
+    border: 0.5px solid black;
+    border-radius: 1px;
+}

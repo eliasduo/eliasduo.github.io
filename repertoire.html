@@ -1,444 +1,402 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Repertoire</title>
-<link href="main.css" rel="stylesheet" type="text/css" />
-<link REL="SHORTCUT ICON" HREF="img/miniLogo.jpg">
-<script src="jquery-1.6.1.js" type="text/javascript"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-	    $(".slidingDiv").hide();
-	    $(".show_hide").show();
-	    $(".slidingDiv2").hide();
-	    $(".show_hide2").show();
-	 	$(".slidingDiv3").hide();
-	    $(".show_hide3").show();
-	    $(".slidingDiv4").hide();
-	    $(".show_hide4").show();
-		$(".slidingDivBar").hide();
-		$(".slidingDivBar2").hide();
-		$(".slidingDivBar3").hide();
-		$(".slidingDivBar4").hide();
-	 
-	    $('.show_hide').click(function(){
-	    $(".slidingDiv").slideToggle();
-		return false;
-		});	 
-	    $('.show_hide2').click(function(){
-	    $(".slidingDiv2").slideToggle();
-		return false;
-		});	 
-		$('.show_hide3').click(function(){
-	    $(".slidingDiv3").slideToggle();
-		return false;
-		});	 
-	    $('.show_hide4').click(function(){
-	    $(".slidingDiv4").slideToggle();
-		return false;
-		});
-		
-		$('.show_hide').click(function(){
-	    $(".slidingDivBar").slideToggle();
-		return false;
-		});	 
-	    $('.show_hide2').click(function(){
-	    $(".slidingDivBar2").slideToggle();
-		return false;
-		});	 
-		$('.show_hide3').click(function(){
-	    $(".slidingDivBar3").slideToggle();
-		return false;
-		});	 
-	    $('.show_hide4').click(function(){
-	    $(".slidingDivBar4").slideToggle();
-		return false;
-		});	
-}); 
-</script>
-</head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Repertoire</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    <link href="css/repetoire.css" rel="stylesheet">
+    <link REL="SHORTCUT ICON" HREF="favicon.ico">
 </head>
 
 <body>
 
-<div class="container">
-  <div class="sidebar1">
-    <img src="img/testlogosmall3.png" border="0" usemap="#Map" />
-    <map name="Map" id="Map">
-      <area shape="rect" coords="12,207,56,224" href="index.html" alt="Home" />
-      <area shape="rect" coords="12,349,86,369" href="repertoire.html" alt="Repertoire" />
-      <area shape="rect" coords="12,384,62,401" href="photos.html" alt="Photos" />
-	  <area shape="rect" coords="12,241,94,261" href="bios.html" alt="Biographies" />
-      <area shape="rect" coords="12,279,74,297" href="concerts.html" alt="Concerts" />
-      <area shape="rect" coords="12,313,91,333" href="recordings.html" alt="Recordings" />
-      <area shape="rect" coords="12,420,90,438" href="contact.html" alt="Contact Us" />
-    </map>
-    <div class="slidingDivBar">
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <header class="navbar">
+        <h1>
+            <a class="brand" href="index.html">Elias Duo</a>
+        </h1>
+        <nav>
+            <a class="nav-item" href="index.html">Home</a>
+            <a class="nav-item" href="bios.html">Biographies</a>
+            <a class="nav-item" href="concerts.html">Concerts</a>
+            <a class="nav-item" href="recordings.html">Recordings</a>
+            <a class="nav-item" href="cds.html">CDs</a>
+            <a class="nav-item active-item" href="repertoire.html">Repertoire</a>
+            <a class="nav-item" href="photos.html">Photos</a>
+            <a class="nav-item" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="rep-container">
+
+
+        <div class="rep-card">
+                <h2 class="rep-hdr">Piano Concerto</h2><br>
+                <table id="pianoConcertRep" class="rep-table">
+                    <tr>
+                        <th>Composer</th>
+                        <th>Pieces</th>
+                    </tr>
+                    <tr>
+                        <td>Bach, J. S.</td>
+                        <td>Concerto in D Minor<br/>Concerto in C Minor for two pianos</td>
+                    </tr>
+                    <tr>
+                        <td>Beethoven</td>
+                        <td>Concerto No. 3 in C Minor<br/>Concerto No. 4 in G Major<br/>Concerto No. 5 in Eb Major<br/>Triple Concerto for violin, cello and piano</td>
+                    </tr>
+                    <tr>
+                        <td>Chopin</td>
+                        <td>Grand Polonaise Brillante<br/>Concerto Op. 21 No. 2 in F Minor</td>
+                    </tr>
+                    <tr>
+                        <td>De Falla</td>
+                        <td>Night in the Gardens of Spain</td>
+                    </tr>
+                    <tr>
+                        <td>Gershwin</td>
+                        <td>Concerto in F</td>
+                    </tr>
+                    <tr>
+                        <td>Grieg</td>
+                        <td>Concerto in A Minor Op. 16</td>
+                    </tr>
+                    <tr>
+                        <td>Haydn</td>
+                        <td>Concerto in D Major Hob XVIII No. 11</td>
+                    </tr>
+                    <tr>
+                        <td>Liszt</td>
+                        <td>Concerto No. 2 in A Major<br/>Totentanz</td>
+                    </tr>
+                    <tr>
+                        <td>Mendelssohn</td>
+                        <td>Concerto in G Minor Op. 25</td>
+                    </tr>
+                    <tr>
+                        <td>Mozart</td>
+                        <td>Concerto in C Major K 467<br/>Concerto in A Major K 488<br/>Concerto in Eb Major K. 365 for two pianos</td>
+                    </tr>
+                    <tr>
+                        <td>Poulenc</td>
+                        <td>Concerto in D Minor for two pianos</td>
+                    </tr>
+                    <tr>
+                        <td>Saint-Saens</td>
+                        <td>Concerto No 2 Op. 22 in G Minor</td>
+                    </tr>
+                    <tr>
+                        <td>Schumann</td>
+                        <td>Concerto in A Minor</td>
+                    </tr>
+                    <tr>
+                        <td>Shostakovich</td>
+                        <td>Concerto No. 2 Op. 102</td>
+                    </tr>
+                </table>
+        </div>
+
+        <div class="rep-card">
+                <h2 class="rep-hdr">Violin Solo</h2><br>
+                <table id="violinSoloRep" class="rep-table">
+                    <tr>
+                        <th>Composer</th>
+                        <th>Pieces</th>
+                    </tr>
+                    <tr>
+                        <td>Bach, J. S.</td>
+                        <td>Concerto Nr. 1 in A Minor<br/>Concerto Nr. 2 in E Major<br/>Concerto for two Violins in D Minor<br/>Concerto for Violin and Oboe in D Minor </td>
+                    </tr>
+                    <tr>
+                        <td>Beethoven</td>
+                        <td>Triple Concerto for Violin, Violoncello and Pianoforte<br/>Romance in F Major</td>
+                    </tr>
+                    <tr>
+                        <td>Brahms</td>
+                        <td>Double Concerto for Violin and Violoncello </td>
+                    </tr>
+                    <tr>
+                        <td>Bruch</td>
+                        <td>Concerto Nr. 1 in G Minor</td>
+                    </tr>
+                    <tr>
+                        <td>Rimsky-Korsakov, Nicolai</td>
+                        <td>"Scheherezade" Symphonic Suite Op. 35</td>
+                    </tr>
+                    <tr>
+                        <td>Lalo, Eduard</td>
+                        <td>Symphonie Espagnol</td>
+                    </tr>
+                    <tr>
+                        <td>Mendelssohn</td>
+                        <td>Concerto for Violin and Piano in D Minor</td>
+                    </tr>
+                    <tr>
+                        <td>Mozart</td>
+                        <td>Concerto Nr. 3 in G Major KV 216<br/>Concerto Nr. 4 in D Major KV 218<br/>Concerto Nr. 5 in A Major KV 219<br/>Sinfonia Concertante in E flat KV 364<br/>Concertone for two Violins in C Major </td>
+                    </tr>
+                    <tr>
+                        <td>Vivaldi</td>
+                        <td>Concerto in G Minor<br/>Concerto in A Minor<br/>The Four Seasons </td>
+                    </tr>
+                </table>
+            </div>
+
+
+        <div class="rep-card">
+            <h2 class="rep-hdr">Violin & Piano</h2><br>
+            <table id="violinPianoRep" class="rep-table">
+                <tr>
+                    <th>Composer</th>
+                    <th>Pieces</th>
+                </tr>
+                <tr>
+                    <td>Alas, Ciriaco</td>
+                    <td>Dichoso Fui</td>
+                </tr>
+                <tr>
+                    <td>Bach, J. S.</td>
+                    <td>Air on the G String</td>
+                </tr>
+                <tr>
+                    <td>Beethoven</td>
+                    <td>Violin Sonata No. 5 Op. 24 "Spring"<br/>Violin Sonata No. 7 Op. 30 No. 2<br/>Violin Sonata No. 8 Op. 30 No. 3<br/>Romance in F Major Op. 50 </td>
+                </tr>
+                <tr>
+                    <td>Bolcom, William </td>
+                    <td>Sonata No. 3 (Stramba)</td>
+                </tr>
+                <tr>
+                    <td>Brahms</td>
+                    <td>Sonata No. 2 in A M Op. 100<br/>Sonata No. 3 in D m Op, 108<br/>Sonatensatz</td>
+                </tr>
+                <tr>
+                    <td>Caceres, German</td>
+                    <td>Sonata No. 1<br/>Sonata No. 2</td>
+                </tr>
+                <tr>
+                    <td>Debussy</td>
+                    <td>Sonata in G Minor</td>
+                </tr>
+                <tr>
+                    <td>Dello Joio, Norman</td>
+                    <td>Colloquies</td>
+                </tr>
+                <tr>
+                    <td>Dvorak</td>
+                    <td>Sonatina in G M Op. 100<br/>Four Romantic Pieces Op. 75</td>
+                </tr>
+                <tr>
+                    <td>Falla</td>
+                    <td>Suite of Spanish Folksongs </td>
+                </tr>
+                <tr>
+                    <td>Faure</td>
+                    <td>Apres un Reve<br/>Sonata No. 1 in A Major Op. 13</td>
+                </tr>
+                <tr>
+                    <td>Franck</td>
+                    <td>Sonata in A M</td>
+                </tr>
+                <tr>
+                    <td>Granados</td>
+                    <td>Spanish Dance</td>
+                </tr>
+                <tr>
+                    <td>Grieg</td>
+                    <td>Sonata in C Minor Op. 45</td>
+                </tr>
+                <tr>
+                    <td>Hindemith</td>
+                    <td>Sonata in D M Op. 11 No. 2</td>
+                </tr>
+                <tr>
+                    <td>Kreisler</td>
+                    <td>Libesleid<br/>Libesfreud<br/>Variations on a theme by Corelli</td>
+                </tr>
+                <tr>
+                    <td>Mozart</td>
+                    <td>Violin Sonatas No. 3 K 304, No. 8 K 296, No. 9, No. 12 K. 380<br/>K. 377, No. 12 K. 380 and No.15 K.464</td>
+                </tr>
+                <tr>
+                    <td>Nero, Paul</td>
+                    <td>Hot Canary</td>
+                </tr>
+                <tr>
+                    <td>Pergolesi</td>
+                    <td>Violin Sonata No. 12 in E M</td>
+                </tr>
+                <tr>
+                    <td>Ponce</td>
+                    <td>Estrellita</td>
+                </tr>
+                <tr>
+                    <td>Prokofiev</td>
+                    <td>Five Melodies Op. 35A </td>
+                </tr>
+                <tr>
+                    <td>Rachmaninoff</td>
+                    <td>Vocalise Op. 34 No. 14</td>
+                </tr>
+                <tr>
+                    <td>Sarasate</td>
+                    <td>Malaguena, Op.21<br/>Romanza Andaluza, Op.22<br/>Introduction & Tarantella, op.43<br/>Navarra (Spanish Dance for Two Violins), Op.33</td>
+                </tr>
+                <tr>
+                    <td>Schubert</td>
+                    <td>Sonatina No. 1 Op. 137</td>
+                </tr>
+                <tr>
+                    <td>Smetana</td>
+                    <td>From My Native Country</td>
+                </tr>
+                <tr>
+                    <td>Stevens, Halsey</td>
+                    <td>Sonatina No. 3 </td>
+                </tr>
+                <tr>
+                    <td>Tchaikovsky</td>
+                    <td>Melodie Op. 42</td>
+                </tr>
+                <tr>
+                    <td>Villar, Rogelio</td>
+                    <td>Romanza</td>
+                </tr>
+                <tr>
+                    <td>Williams, John</td>
+                    <td>Theme from "Schindler's List"</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="rep-card">
+            <h2 class="rep-hdr">Piano Solo</h2><br>
+            <table id="pianoSoloRep" class="rep-table">
+                <tr>
+                    <th>Composer</th>
+                    <th>Pieces</th>
+                </tr>
+                <tr>
+                    <td>Alabiev/Liszt</td>
+                    <td>The Nightingale</td>
+                </tr>
+                <tr>
+                    <td>Albéniz</td>
+                    <td>El Puerto<br/>Eritaña</td>
+                </tr>
+                <tr>
+                    <td>Bach, J. S.</td>
+                    <td>English Suites No. 3 in G m and No. 4 in E m<br/>French Suite No. 5 in G M<br/>Partitas No. 1 in Bb M and No. 2 in Cm<br/>Toccata in C m<br/>Italian Concerto<br/>Preludes and Fugues No. 2, 8, 16, 22 (WTC I);<br/> No. 5, 6, 12, 18, 24 (WTC II)</td>
+                </tr>
+                <tr>
+                    <td>Beethoven</td>
+                    <td>Fantasy Op. 77<br/>Sonatas: Op. 2 No 3 in C M, Op. 10 No. 3 in D M,<br/>Op. 13 in C m, Op. 31 No 2 in D m, Op. 53 in CM<br/>Op. 57 in F m, Op. 78 in F# M, Op. 81 a,<br/>Op.110 in Ab M, Op. 111 in C m.<br/>Eroica Variations Op. 35</td>
+                </tr>
+                <tr>
+                    <td>Bartok</td>
+                    <td>Allegro Barbaro<br/>Rumanian Dances<br/>Suite Op. 14</td>
+                </tr>
+                <tr>
+                    <td>Brahms</td>
+                    <td>2 Rhapsodies Op. 79<br/>Sonata Op. 5 in F Minor<br/>Variations and Fugue on a theme by Handel Op. 24<br/>Phantasien Op. 116</td>
+                </tr>
+                <tr>
+                    <td>Castro, Juan José</td>
+                    <td>Sonatina Española<br/>Suite Infantil<br/>Tangos<br/>Toccata</td>
+                </tr>
+                <tr>
+                    <td>Chopin</td>
+                    <td>Andante Spianato and Polonesa Brillante<br/>Ballades No. 3 in Ab M and No. 4 in F m<br/>Berceuse<br/>Etudes Op. 10 No. 4, 5, 8; Op. 25 No. 4, 5, 7,<br/>10, 11, 12<br/>Impromptus No. 1, 2 and 3<br/>Fantasie-Impromptu Op. 66<br/>Mazurkas Op. 7 no 1, Op. 7 No. 2, Op. 68 No 2<br/>Nocturnes Op. 27 No. 2 and Op. 48 No. 1<br/>Polonaise Op. 26 No. 2 and Op. 44<br/>Preludes No. 4, 6, 8, 15, 17 and 24<br/>Sonata Op. 58 No. 3</td>
+                </tr>
+                <tr>
+                    <td>Debussy</td>
+                    <td>Estampes<br/>Images I<br/>L'Isle Joyeuse<br/>Preludes: 1, 8, 10, 12 (Book I)<br/>3, 4, 6, 12 (Book II)</td>
+                </tr>
+                <tr>
+                    <td>Ginastera</td>
+                    <td>Malambo<br/>Rondo<br/>Sonatas No. 1 and No. 2<br/>Tres Danzas Argentinas</td>
+                </tr>
+                <tr>
+                    <td>Glinka-Balakirev</td>
+                    <td>L'alouette</td>
+                </tr>
+                <tr>
+                    <td>Grieg</td>
+                    <td>Nocturne Op. 54 No 4<br/>Sonata in E Minor Op. 7</td>
+                </tr>
+                <tr>
+                    <td>Guastavino, Carlos</td>
+                    <td>Tierra Linda</td>
+                </tr>
+                <tr>
+                    <td>Haydn</td>
+                    <td>Sonatas No. 48 in C M, No. 49 in Eb M,<br/>No. 52 in Eb M</td>
+                </tr>
+                <tr>
+                    <td>Liszt</td>
+                    <td>Etudes d'execution transcendante No. 10, 11<br/>Hungarian Rhapsody No. 11,12<br/>Mephisto Waltz<br/>Jeux d'eaux a la Villa d'Este</td>
+                </tr>
+                <tr>
+                    <td>Mendelssohn</td>
+                    <td>Rondo Capriccioso in E Major Op. 14<br/>Three Fantasies or Caprices Op 16</td>
+                </tr>
+                <tr>
+                    <td>Mozart</td>
+                    <td>Fantasy in D m K. 397<br/>Sonatas K. 282, K. 311, K. 310, K. 333, K. 576<br/>Variations on the aria "Lison dormait"</td>
+                </tr>
+                <tr>
+                    <td>Mussorgsky</td>
+                    <td>Pictures at an Exhibition</td>
+                </tr>
+                <tr>
+                    <td>Ponce</td>
+                    <td>Balada Mexicana</td>
+                </tr>
+                <tr>
+                    <td>Prokofiev</td>
+                    <td>Prelude in C Op. 12 No.7<br/>Sonata No. 3 Op. 28<br/>Tocatta Op. 11</td>
+                </tr>
+                <tr>
+                    <td>Rachmaninoff</td>
+                    <td>Etudes Tableaux Op. 39 No. 6 and No. 8<br/>Preludes Op. 23 No. 4 and No. 5</td>
+                </tr>
+                <tr>
+                    <td>Rameau</td>
+                    <td>Gavotte avec six doubles</td>
+                </tr>
+                <tr>
+                    <td>Ravel</td>
+                    <td>Jeux d'Eau<br/>Miroirs<br/>Sonatine</td>
+                </tr>
+                <tr>
+                    <td>Scarlatti</td>
+                    <td>Sonatas in D M L 14, Bb M L 39, C M L 104,<br/>D M L 465</td>
+                </tr>
+                <tr>
+                    <td>Schubert</td>
+                    <td>Impromptus Op. 90<br/>Sonata Op. 42 in A m<br/>Sonata in Bb M</td>
+                </tr>
+                <tr>
+                    <td>Schumann</td>
+                    <td>Carnaval Op. 9<br/>Phantasiestücke Op. 12<br/>Sonata No. 1 in F#m Op. 11</td>
+                </tr>
+                <tr>
+                    <td>Scriabin</td>
+                    <td>Etudes Op. 2 No. 1 and Op. 8 No. 12<br/>Sonata No. 4<br/>Two Poems Op. 32</td>
+                </tr>
+                <tr>
+                    <td>Villalobos</td>
+                    <td>Impressoes Seresteiras<br/>O Polichinello</td>
+                </tr>
+            </table>
+        </div>
+
     </div>
-    <div class="slidingDivBar2">
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
-    <div class="slidingDivBar3">
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
-    <div class="slidingDivBar4">
-    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-    </div>
-    <center><p>Copyright&#169 2011 by <a href="http://www.sgtzippy.com" target="_blank">Scott Hart</a> All Rights Reserved.</p></center>
-  <!-- end .sidebar1 --></div>
-  <div class="content">
-    <div class="header"><img src="img/repertoireHeader.png" /></div>
-    <center><a href="#" class="show_hide" style="color:#573313; font-size:35pt; font-family: 'Edwardian Script ITC'">Violin and Piano</a></center>
-    <div class="slidingDiv">
-    <p style="font-size:12px; font-family:Georgia">
-    	<center><table class="table" border="1">
-    	<tr>
-        	<td>Alas, Ciriaco</td>
-            <td>Dichoso Fui</td>
-        </tr>
-        <tr>
-        	<td>Bach, J. S.</td>
-            <td>Air on the G String</td>
-        </tr>
-        <tr>
-        	<td>Beethoven</td>
-            <td>Violin Sonata No. 5 Op. 24 "Spring"<br/>Violin Sonata No. 7 Op. 30 No. 2<br/>Violin Sonata No. 8 Op. 30 No. 3<br/>Romance in F Major Op. 50 </td>
-        </tr>
-        <tr>
-        	<td>Bolcom, William </td>
-            <td>Sonata No. 3 (Stramba)</td>
-        </tr>
-        <tr>
-        	<td>Brahms</td>
-            <td>Sonata No. 2 in A M Op. 100<br/>Sonata No. 3 in D m Op, 108<br/>Sonatensatz</td>
-        </tr>
-        <tr>
-        	<td>Caceres, German</td>
-            <td>Sonata No. 1<br/>Sonata No. 2</td>
-        </tr>
-        <tr>
-        	<td>Debussy</td>
-            <td>Sonata in G Minor</td>
-        </tr>
-        <tr>
-        	<td>Dello Joio, Norman</td>
-            <td>Colloquies</td>
-        </tr>
-        <tr>
-        	<td>Dvorak</td>
-            <td>Sonatina in G M Op. 100<br/>Four Romantic Pieces Op. 75</td>
-        </tr>
-        <tr>
-        	<td>Falla</td>
-            <td>Suite of Spanish Folksongs </td>
-        </tr>
-        <tr>
-        	<td>Faure</td>
-            <td>Apres un Reve<br/>Sonata No. 1 in A Major Op. 13</td>
-        </tr>
-        <tr>
-        	<td>Franck</td>
-            <td>Sonata in A M</td>
-        </tr>
-        <tr>
-        	<td>Granados</td>
-            <td>Spanish Dance</td>
-        </tr>
-        <tr>
-        	<td>Grieg</td>
-            <td>Sonata in C Minor Op. 45</td>
-        </tr>
-        <tr>
-        	<td>Hindemith</td>
-            <td>Sonata in D M Op. 11 No. 2</td>
-        </tr>
-        <tr>
-        	<td>Kreisler</td>
-            <td>Libesleid<br/>Libesfreud<br/>Variations on a theme by Corelli</td>
-        </tr>
-        <tr>
-        	<td>Mozart</td>
-            <td>Violin Sonatas No. 3 K 304, No. 8 K 296, No. 9, No. 12 K. 380<br/>K. 377, No. 12 K. 380 and No.15 K.464</td>
-        </tr>
-        <tr>
-        	<td>Nero, Paul</td>
-            <td>Hot Canary</td>
-        </tr>
-        <tr>
-        	<td>Pergolesi</td>
-            <td>Violin Sonata No. 12 in E M</td>
-        </tr>
-        <tr>
-        	<td>Ponce</td>
-            <td>Estrellita</td>
-        </tr>
-        <tr>
-        	<td>Prokofiev</td>
-            <td>Five Melodies Op. 35A </td>
-        </tr>
-        <tr>
-        	<td>Rachmaninoff</td>
-            <td>Vocalise Op. 34 No. 14</td>
-        </tr>
-        <tr>
-        	<td>Sarasate</td>
-            <td>Malaguena, Op.21<br/>Romanza Andaluza, Op.22<br/>Introduction & Tarantella, op.43<br/>Navarra (Spanish Dance for Two Violins), Op.33</td>
-        </tr>
-        <tr>
-        	<td>Schubert</td>
-            <td>Sonatina No. 1 Op. 137</td>
-        </tr>
-        <tr>
-        	<td>Smetana</td>
-            <td>From My Native Country</td>
-        </tr>
-        <tr>
-        	<td>Stevens, Halsey</td>
-            <td>Sonatina No. 3 </td>
-        </tr>
-        <tr>
-        	<td>Tchaikovsky</td>
-            <td>Melodie Op. 42</td>
-        </tr>
-        <tr>
-        	<td>Villar, Rogelio</td>
-            <td>Romanza</td>
-        </tr>
-        <tr>
-        	<td>Williams, John</td>
-            <td>Theme from "Schindler's List"</td>
-        </tr>
-    	</table>
-        Selected Tangos from composers such as Piazzolla, Gardel, Matos Rodriguez, Canaro and Villoldo
-        </center></p></div>
-    
-    <center><a href="#" class="show_hide2" style="color:#573313; font-size:35pt; font-family:'Edwardian Script ITC'">Piano Solo</a></center>
-    <div class="slidingDiv2">
-    <p style="font-size:12px; font-family:Georgia">
-    	<center><table class="table" border="1">
-    	<tr>
-        	<td>Alabiev/Liszt</td>
-            <td>The Nightingale</td>
-        </tr>
-        <tr>
-        	<td>Albéniz</td>
-            <td>El Puerto<br/>Eritaña</td>
-        </tr>
-        <tr>
-        	<td>Bach, J. S.</td>
-            <td>English Suites No. 3 in G m and No. 4 in E m<br/>French Suite No. 5 in G M<br/>Partitas No. 1 in Bb M and No. 2 in Cm<br/>Toccata in C m<br/>Italian Concerto<br/>Preludes and Fugues No. 2, 8, 16, 22 (WTC I);<br/> No. 5, 6, 12, 18, 24 (WTC II)</td>
-        </tr>
-        <tr>
-        	<td>Beethoven</td>
-            <td>Fantasy Op. 77<br/>Sonatas: Op. 2 No 3 in C M, Op. 10 No. 3 in D M,<br/>Op. 13 in C m, Op. 31 No 2 in D m, Op. 53 in CM<br/>Op. 57 in F m, Op. 78 in F# M, Op. 81 a,<br/>Op.110 in Ab M, Op. 111 in C m.<br/>Eroica Variations Op. 35</td>
-        </tr>
-        <tr>
-        	<td>Bartok</td>
-            <td>Allegro Barbaro<br/>Rumanian Dances<br/>Suite Op. 14</td>
-        </tr>
-        <tr>
-        	<td>Brahms</td>
-            <td>2 Rhapsodies Op. 79<br/>Sonata Op. 5 in F Minor<br/>Variations and Fugue on a theme by Handel Op. 24<br/>Phantasien Op. 116</td>
-        </tr>
-        <tr>
-        	<td>Castro, Juan José</td>
-            <td>Sonatina Española<br/>Suite Infantil<br/>Tangos<br/>Toccata</td>
-        </tr>
-        <tr>
-        	<td>Chopin</td>
-            <td>Andante Spianato and Polonesa Brillante<br/>Ballades No. 3 in Ab M and No. 4 in F m<br/>Berceuse<br/>Etudes Op. 10 No. 4, 5, 8; Op. 25 No. 4, 5, 7,<br/>10, 11, 12<br/>Impromptus No. 1, 2 and 3<br/>Fantasie-Impromptu Op. 66<br/>Mazurkas Op. 7 no 1, Op. 7 No. 2, Op. 68 No 2<br/>Nocturnes Op. 27 No. 2 and Op. 48 No. 1<br/>Polonaise Op. 26 No. 2 and Op. 44<br/>Preludes No. 4, 6, 8, 15, 17 and 24<br/>Sonata Op. 58 No. 3</td>
-        </tr>
-        <tr>
-        	<td>Debussy</td>
-            <td>Estampes<br/>Images I<br/>L'Isle Joyeuse<br/>Preludes: 1, 8, 10, 12 (Book I)<br/>3, 4, 6, 12 (Book II)</td>
-        </tr>
-        <tr>
-        	<td>Ginastera</td>
-            <td>Malambo<br/>Rondo<br/>Sonatas No. 1 and No. 2<br/>Tres Danzas Argentinas</td>
-        </tr>
-        <tr>
-        	<td>Glinka-Balakirev</td>
-            <td>L'alouette</td>
-        </tr>
-        <tr>
-        	<td>Grieg</td>
-            <td>Nocturne Op. 54 No 4<br/>Sonata in E Minor Op. 7</td>
-        </tr>
-        <tr>
-        	<td>Guastavino, Carlos</td>
-            <td>Tierra Linda</td>
-        </tr>
-        <tr>
-        	<td>Haydn</td>
-            <td>Sonatas No. 48 in C M, No. 49 in Eb M,<br/>No. 52 in Eb M</td>
-        </tr>
-        <tr>
-        	<td>Liszt</td>
-            <td>Etudes d'execution transcendante No. 10, 11<br/>Hungarian Rhapsody No. 11,12<br/>Mephisto Waltz<br/>Jeux d'eaux a la Villa d'Este</td>
-        </tr>
-        <tr>
-        	<td>Mendelssohn</td>
-            <td>Rondo Capriccioso in E Major Op. 14<br/>Three Fantasies or Caprices Op 16</td>
-        </tr>
-        <tr>
-        	<td>Mozart</td>
-            <td>Fantasy in D m K. 397<br/>Sonatas K. 282, K. 311, K. 310, K. 333, K. 576<br/>Variations on the aria "Lison dormait"</td>
-        </tr>
-        <tr>
-        	<td>Mussorgsky</td>
-            <td>Pictures at an Exhibition</td>
-        </tr>
-        <tr>
-        	<td>Ponce</td>
-            <td>Balada Mexicana</td>
-        </tr>
-        <tr>
-        	<td>Prokofiev</td>
-            <td>Prelude in C Op. 12 No.7<br/>Sonata No. 3 Op. 28<br/>Tocatta Op. 11</td>
-        </tr>
-        <tr>
-        	<td>Rachmaninoff</td>
-            <td>Etudes Tableaux Op. 39 No. 6 and No. 8<br/>Preludes Op. 23 No. 4 and No. 5</td>
-        </tr>
-        <tr>
-        	<td>Rameau</td>
-            <td>Gavotte avec six doubles</td>
-        </tr>
-        <tr>
-        	<td>Ravel</td>
-            <td>Jeux d'Eau<br/>Miroirs<br/>Sonatine</td>
-        </tr>
-        <tr>
-        	<td>Scarlatti</td>
-            <td>Sonatas in D M L 14, Bb M L 39, C M L 104,<br/>D M L 465</td>
-        </tr>
-        <tr>
-        	<td>Schubert</td>
-            <td>Impromptus Op. 90<br/>Sonata Op. 42 in A m<br/>Sonata in Bb M</td>
-        </tr>
-        <tr>
-        	<td>Schumann</td>
-            <td>Carnaval Op. 9<br/>Phantasiestücke Op. 12<br/>Sonata No. 1 in F#m Op. 11</td>
-        </tr>
-        <tr>
-        	<td>Scriabin</td>
-            <td>Etudes Op. 2 No. 1 and Op. 8 No. 12<br/>Sonata No. 4<br/>Two Poems Op. 32</td>
-        </tr>
-        <tr>
-        	<td>Villalobos</td>
-            <td>Impressoes Seresteiras<br/>O Polichinello</td>
-        </tr>
-        </table>
-        </center></p></div>
-    
-    <center><a href="#" class="show_hide3" style="color:#573313; font-size:35pt; font-family:'Edwardian Script ITC'">Piano Concerto</a></center>
-    <div class="slidingDiv3">
-    <p style="font-size:12px; font-family:Georgia">
-    	<center><table class="table" border="1">
-    	<tr>
-        	<td>Bach, J. S.</td>
-            <td>Concerto in D Minor<br/>Concerto in C Minor for two pianos</td>
-        </tr>
-        <tr>
-        	<td>Beethoven</td>
-            <td>Concerto No. 3 in C Minor<br/>Concerto No. 4 in G Major<br/>Concerto No. 5 in Eb Major<br/>Triple Concerto for violin, cello and piano</td>
-        </tr>
-        <tr>
-        	<td>Chopin</td>
-            <td>Grand Polonaise Brillante<br/>Concerto Op. 21 No. 2 in F Minor</td>
-        </tr>
-        <tr>
-        	<td>De Falla</td>
-            <td>Night in the Gardens of Spain</td>
-        </tr>
-        <tr>
-        	<td>Gershwin</td>
-            <td>Concerto in F</td>
-        </tr>
-        <tr>
-        	<td>Grieg</td>
-            <td>Concerto in A Minor Op. 16</td>
-        </tr>
-        <tr>
-        	<td>Haydn</td>
-            <td>Concerto in D Major Hob XVIII No. 11</td>
-        </tr>
-        <tr>
-        	<td>Liszt</td>
-            <td>Concerto No. 2 in A Major<br/>Totentanz</td>
-        </tr>
-        <tr>
-        	<td>Mendelssohn</td>
-            <td>Concerto in G Minor Op. 25</td>
-        </tr>
-        <tr>
-        	<td>Mozart</td>
-            <td>Concerto in C Major K 467<br/>Concerto in A Major K 488<br/>Concerto in Eb Major K. 365 for two pianos</td>
-        </tr>
-        <tr>
-        	<td>Poulenc</td>
-            <td>Concerto in D Minor for two pianos</td>
-        </tr>
-        <tr>
-        	<td>Saint-Saens</td>
-            <td>Concerto No 2 Op. 22 in G Minor</td>
-        </tr>
-        <tr>
-        	<td>Schumann</td>
-            <td>Concerto in A Minor</td>
-        </tr>
-        <tr>
-        	<td>Shostakovich</td>
-            <td>Concerto No. 2 Op. 102</td>
-        </tr>
-        </table>
-        </center></p></div>
-    
-    <center><a href="#" class="show_hide4" style="color:#573313; font-size:35pt; font-family:'Edwardian Script ITC'">Violin Solo</a></center>
-    <div class="slidingDiv4">
-    <p style="font-size:12px; font-family:Georgia">
-    	<center><table class="table" border="1">
-    	<tr>
-        	<td>Bach, J. S.</td>
-            <td>Concerto Nr. 1 in A Minor<br/>Concerto Nr. 2 in E Major<br/>Concerto for two Violins in D Minor<br/>Concerto for Violin and Oboe in D Minor </td>
-        </tr>
-        <tr>
-        	<td>Beethoven</td>
-            <td>Triple Concerto for Violin, Violoncello and Pianoforte<br/>Romance in F Major</td>
-        </tr>
-        <tr>
-        	<td>Brahms</td>
-            <td>Double Concerto for Violin and Violoncello </td>
-        </tr>
-        <tr>
-        	<td>Bruch</td>
-            <td>Concerto Nr. 1 in G Minor</td>
-        </tr>
-        <tr>
-        	<td>Rimsky-Korsakov, Nicolai</td>
-            <td>"Scheherezade" Symphonic Suite Op. 35</td>
-        </tr>
-        <tr>
-        	<td>Lalo, Eduard</td>
-            <td>Symphonie Espagnol</td>
-        </tr>
-        <tr>
-        	<td>Mendelssohn</td>
-            <td>Concerto for Violin and Piano in D Minor</td>
-        </tr>
-        <tr>
-        	<td>Mozart</td>
-            <td>Concerto Nr. 3 in G Major KV 216<br/>Concerto Nr. 4 in D Major KV 218<br/>Concerto Nr. 5 in A Major KV 219<br/>Sinfonia Concertante in E flat KV 364<br/>Concertone for two Violins in C Major </td>
-        </tr>
-        <tr>
-        	<td>Vivaldi</td>
-            <td>Concerto in G Minor<br/>Concerto in A Minor<br/>The Four Seasons </td>
-        </tr>
-        </table>
-        </center></p></div>
-    <!-- end .content --></div>
-  <div class="clearfloat"></div>
-  <!-- end .container --></div>
+
+    <footer class="navbar">
+        <nav>
+          <a class="nav-item" href="contact.html">Contact Us</a>
+        </nav>
+    </footer>
+
 </body>
 </html>

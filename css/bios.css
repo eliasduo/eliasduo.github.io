@@ -1,0 +1,39 @@
+.panel {
+    width: 100%;
+    margin: 2.5%; 
+}
+
+.bio-container {
+    margin: 2%;
+}
+
+.bio-text {
+    margin: 2%;
+}
+
+.bio-img {
+    align-self: center;
+}
+
+.bio-nameplate {
+    text-align: center;
+}
+
+.bio-container {
+    display: flex; 
+    margin: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.bio-card {
+    width: max-content;
+    padding: 2%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.record-hdr {
+    margin: 2%;
+    text-align: center;
+}

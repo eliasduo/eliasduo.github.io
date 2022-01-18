@@ -1,37 +1,59 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Elias Duo</title>
-<link href="main.css" rel="stylesheet" type="text/css" />
-<link REL="SHORTCUT ICON" HREF="img/miniLogo.jpg">
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Elias Duo</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link REL="SHORTCUT ICON" HREF="favicon.ico"   >
 </head>
 
 <body>
+  <header class="navbar">
+    <h1>
+      <a class="brand" href="index.html">Elias Duo</a>
+    </h1>
+    <nav>
+      <a class="nav-item active-item" href="index.html">Home</a>
+      <a class="nav-item" href="bios.html">Biographies</a>
+      <a class="nav-item" href="concerts.html">Concerts</a>
+      <a class="nav-item" href="recordings.html">Recordings</a>
+      <a class="nav-item" href="cds.html">CDs</a>
+      <a class="nav-item" href="repertoire.html">Repertoire</a>
+      <a class="nav-item" href="photos.html">Photos</a>
+      <a class="nav-item" href="contact.html">Contact</a>
+  </nav>
+  </header>
 
-<div class="container">
-  <div class="sidebar1">
-    <img src="img/testlogosmall3.png" border="0" usemap="#Map" />
-    <map name="Map" id="Map">
-      <area shape="rect" coords="12,207,56,224" href="index.html" alt="Home" />
-      <area shape="rect" coords="12,349,86,369" href="repertoire.html" alt="Repertoire" />
-      <area shape="rect" coords="12,384,62,401" href="photos.html" alt="Photos" />
-	  <area shape="rect" coords="12,241,94,261" href="bios.html" alt="Biographies" />
-      <area shape="rect" coords="12,279,74,297" href="concerts.html" alt="Concerts" />
-      <area shape="rect" coords="12,313,91,333" href="recordings.html" alt="Recordings" />
-      <area shape="rect" coords="12,420,90,438" href="contact.html" alt="Contact Us" />
-    </map>
-    <center><p>"Carlos and Andrea's performance combined astounding precision and an impeccable blend of sound."<br/>-El Diario de Villa Maria<br/>(Argentina)</p></center><br/><br/><br/><br/><br/>
-    <center><p>Copyright&#169 2011 by <a href="http://www.sgtzippy.com" target="_blank">Scott Hart</a> All Rights Reserved.</p></center>
-  <!-- end .sidebar1 --></div>
-  <div class="content">
-    <div class="header"><img src="img/homeHeader.png" /></div>
-    <center><h1>Welcome to official website of the Elias Duo!</h1></center>
-    <center><p>The husband and wife Elias Duo, formed by Carlos Elias, violin and Andrea Arese-Elias, piano, have played concerts in numerous countries such as Argentina, El Salvador, Japan, Bulgaria and the United States.  Praised for their highly expressive performances, the Elias Duo performs works of the standard repertoire as well as Latin American and tango music. <br/><br/><br/></p>
-    <img src="img/main.png" alt="mainpage" /></center>
-    
+  <div class="container">
+    <div class="panel"> 
+      <div class="init-content">
+        <h1 class="init-welcome">Welcome to the official website of the Elias Duo!</h1>
+        <p class="init-info">The husband and wife Elias Duo, formed by Carlos Elias, violin and Andrea Arese-Elias, 
+            piano, have played concerts in numerous countries such as Argentina, El Salvador, Japan, 
+            Bulgaria and the United States.     Praised for their highly expressive performances, 
+            the Elias Duo performs works of the standard repertoire as well as Latin American 
+            and tango music.
+        </p>
+        <div>
+          <a href="concerts.html" class="init-concerts">Upcoming Concerts &#8594;</a>
+        </div>
+      </div>
     </div>
-  <div class="clearfloat"></div>
-  <!-- end .container --></div>
+
+    <div class="panel">
+      <div class="init-content">
+        <img src="img/andrea_carlos_01.jpg" alt="Main Cover Image Let's Tango Album Cover">
+      </div>
+    </div>
+  </div>
+
+  <footer class="navbar">
+    <nav>
+      <a class="nav-item" href="contact.html">Contact Us</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
