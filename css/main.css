@@ -73,13 +73,12 @@ a {
     text-decoration: underline;
 }
 
-/* W3 CSS*/
-.dropdown {
+.rep-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.rep-drop {
     display: none;
     position: absolute;
     background-color: firebrick;
@@ -87,25 +86,14 @@ a {
     min-width: 180px;
 }
 
-.dropdown-content a {
-    color: black;
+.rep-drop a {
     display: inline-block;
     width: 100%;
-    color: white;
     margin-bottom: 5%;
     padding: 5%;
     text-align: center;
 }
 
-.dropdown-content a:hover {
-    color: darkgray;
-}
-
-.dropdown:hover .dropdown-content {
+.rep-dropdown:hover .rep-drop {
     display: block;
 }
-
-#rep-drop {
-    margin-bottom: 50px;
-}
-
