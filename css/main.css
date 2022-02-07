@@ -14,7 +14,6 @@ html {
 
 body {
     background-color: #FAFAFA;
-    /* background-color: #F4F4F4; */
 }
 
 header {
@@ -73,3 +72,40 @@ a {
 .active-item {
     text-decoration: underline;
 }
+
+/* W3 CSS*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: firebrick;
+    border-radius: 5px;
+    min-width: 180px;
+}
+
+.dropdown-content a {
+    color: black;
+    display: inline-block;
+    width: 100%;
+    color: white;
+    margin-bottom: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+.dropdown-content a:hover {
+    color: darkgray;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#rep-drop {
+    margin-bottom: 50px;
+}
+
