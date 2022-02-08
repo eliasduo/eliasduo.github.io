@@ -78,22 +78,21 @@ a {
     display: inline-block;
 }
 
+.rep-dropdown:hover .rep-drop {
+    display: block;
+}
+
 .rep-drop {
     display: none;
     position: absolute;
     background-color: firebrick;
     border-radius: 5px;
-    min-width: 180px;
+    min-width: 200px;
 }
 
 .rep-drop a {
     display: inline-block;
     width: 100%;
-    margin-bottom: 5%;
     padding: 5%;
     text-align: center;
-}
-
-.rep-dropdown:hover .rep-drop {
-    display: block;
 }
