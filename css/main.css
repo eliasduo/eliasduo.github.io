@@ -74,15 +74,14 @@ a {
 }
 
 .rep-dropdown {
-    position: relative;
     display: inline-block;
 }
 
-.rep-dropdown:hover .rep-drop {
+.rep-dropdown:hover .rep-content {
     display: block;
 }
 
-.rep-drop {
+.rep-content {
     display: none;
     position: absolute;
     background-color: firebrick;
@@ -90,7 +89,7 @@ a {
     min-width: 200px;
 }
 
-.rep-drop a {
+.rep-content a {
     display: inline-block;
     width: 100%;
     padding: 5%;
