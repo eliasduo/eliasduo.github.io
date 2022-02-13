@@ -28,7 +28,8 @@ footer {
     background-color: firebrick;
     display: flex;
     align-items: center;
-    padding: 1.5%;
+    padding: 1%;
+    bottom: 0;
 }
 
 a {
