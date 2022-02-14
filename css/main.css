@@ -61,10 +61,6 @@ main {
     display: inline-block;
 }
 
-.rep-dropdown:hover .rep-content {
-    display: block;
-}
-
 .rep-content {
     display: none;
     position: absolute;
@@ -104,4 +100,8 @@ main {
 
 .active-item {
     text-decoration: underline;
+}
+
+#rep-drop {
+    cursor: pointer;
 }
