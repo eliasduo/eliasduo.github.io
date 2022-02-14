@@ -14,7 +14,11 @@ html {
 
 body {
     background-color: #FAFAFA;
-    /* background-color: #F4F4F4; */
+}
+
+.doc-container {
+    position: relative;
+    min-height: 100vh;
 }
 
 header {
@@ -27,13 +31,19 @@ header {
 
 footer {
     background-color: firebrick;
-    display: flex;
-    align-items: center;
-    padding: 1.5%;
+    padding: 1%;
+    margin-top: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding-bottom: 2%;
 }
 
 .nav-item {
@@ -45,6 +55,28 @@ a {
 
 .nav-item:hover {
     color: darkgray;
+}
+
+.rep-dropdown {
+    display: inline-block;
+}
+
+.rep-dropdown:hover .rep-content {
+    display: block;
+}
+
+.rep-content {
+    display: none;
+    position: absolute;
+    background-color: firebrick;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.rep-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 5%;
 }
 
 .brand {
