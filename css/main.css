@@ -31,8 +31,8 @@ header {
 
 footer {
     background-color: firebrick;
-    align-items: center;
     padding: 1%;
+    margin-top: 100px;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -40,6 +40,10 @@ footer {
 
 a {
     text-decoration: none;
+}
+
+main {
+    padding-bottom: 2%;
 }
 
 .nav-item {
