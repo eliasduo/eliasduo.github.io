@@ -29,7 +29,6 @@ footer {
     display: flex;
     align-items: center;
     padding: 1%;
-    bottom: 0;
 }
 
 a {
@@ -45,6 +44,28 @@ a {
 
 .nav-item:hover {
     color: darkgray;
+}
+
+.rep-dropdown {
+    display: inline-block;
+}
+
+.rep-dropdown:hover .rep-content {
+    display: block;
+}
+
+.rep-content {
+    display: none;
+    position: absolute;
+    background-color: firebrick;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.rep-content a {
+    display: inline-block;
+    width: 100%;
+    padding: 5%;
 }
 
 .brand {
@@ -72,26 +93,4 @@ a {
 
 .active-item {
     text-decoration: underline;
-}
-
-.rep-dropdown {
-    display: inline-block;
-}
-
-.rep-dropdown:hover .rep-content {
-    display: block;
-}
-
-.rep-content {
-    display: none;
-    position: absolute;
-    background-color: firebrick;
-    border-radius: 5px;
-    min-width: 200px;
-}
-
-.rep-content a {
-    display: inline-block;
-    width: 100%;
-    padding: 5%;
 }
