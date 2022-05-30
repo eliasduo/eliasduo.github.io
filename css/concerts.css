@@ -6,6 +6,11 @@
     justify-content: center;
 }
 
+.gen-nameplate {
+    text-align: center;
+    margin: 2%;
+}
+
 .concert-card {
     border: 2px solid black;
     width: max-content;
@@ -27,4 +32,8 @@
 .concert-info {
     background-color: white;
     padding: 2%;
+}
+
+.concerts-past {
+    opacity: .8;
 }
