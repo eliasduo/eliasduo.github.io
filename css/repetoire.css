@@ -17,7 +17,8 @@
 }
 
 .rep-hdr {
-    color: firebrick;
+    /* color: firebrick; */
+    color: black;
     margin: 2%;
     text-align: center;
 }

@@ -22,7 +22,8 @@ body {
 }
 
 header {
-    background-color: firebrick;
+    /* background-color: firebrick; */
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +31,8 @@ header {
 }
 
 footer {
-    background-color: firebrick;
+    /* background-color: firebrick; */
+    background-color: black;
     padding: 1%;
     margin-top: 100px;
     position: absolute;
@@ -54,7 +56,8 @@ main {
 }
 
 .nav-item:hover {
-    color: darkgray;
+    /* color: darkgray; */
+    color: #CC9900;
 }
 
 .rep-dropdown {
@@ -64,7 +67,8 @@ main {
 .rep-content {
     display: none;
     position: absolute;
-    background-color: firebrick;
+    /* background-color: firebrick; */
+    background-color: black;
     border-radius: 5px;
     min-width: 200px;
 }
@@ -85,7 +89,8 @@ main {
 }
 
 .brand:hover {
-    color: darkgray;
+    /* color: darkgray; */
+    color: #CC9900;
 }
 
 .container {
@@ -100,6 +105,7 @@ main {
 
 .active-item {
     text-decoration: underline;
+    color: #CC9900;
 }
 
 #rep-drop {
