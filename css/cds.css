@@ -37,7 +37,8 @@
 }
 
 .cd-link {
-    color: firebrick;
+    /* color: firebrick; */
+    color: #CC9900;
     text-decoration: underline;
     font-weight: bold;
 }
