@@ -22,16 +22,14 @@ body {
 }
 
 header {
-    /* background-color: firebrick; */
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5%;
+    padding: 0.5% 0% 0% 0.5%;
 }
 
 footer {
-    /* background-color: firebrick; */
     background-color: black;
     padding: 1%;
     margin-top: 100px;
@@ -56,7 +54,6 @@ main {
 }
 
 .nav-item:hover {
-    /* color: darkgray; */
     color: #CC9900;
 }
 
@@ -67,7 +64,6 @@ main {
 .rep-content {
     display: none;
     position: absolute;
-    /* background-color: firebrick; */
     background-color: black;
     border-radius: 5px;
     min-width: 200px;
@@ -82,14 +78,13 @@ main {
 .brand {
     transition: all 0.5s ease 0s;
     cursor: pointer;
-    font-size: 80px;
+    font-size: 70px;
     font-family: 'Corinthia', Georgia, monospace;
     color: #F4F4F4;
     text-align: center;
 }
 
 .brand:hover {
-    /* color: darkgray; */
     color: #CC9900;
 }
 

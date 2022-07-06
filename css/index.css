@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
 .init-content {
     text-align: center;
 }
 
 .init-info {
-    font-size: 20px;
-    padding: 7.5%;
+    font-size: 18px;
+    padding: 6.5% 7.5% 7.5% 2%;
+    position: absolute;
+    text-align: justify;
+    width: 50%;
 }
 
 .init-welcome {
@@ -12,7 +17,6 @@
 }
 
 .init-concerts {
-    /* color: firebrick; */
     color: #CC9900;
     font-weight: bold;
     font-size: 20px;
@@ -21,4 +25,20 @@
 .init-concerts:hover {
     color: black;
     text-decoration: underline;
+}
+
+#welcomeScreen {
+    position: relative;
+}
+
+#init-title {
+    font-size: 35px;
+    position: absolute;
+    padding: 2% 2% 2% 15%;
+    font-family: 'PT Serif', Georgia, monospace;
+}
+
+#cover-img {
+    width: 100%;
+    height: 100%;
 }
