@@ -1,5 +1,5 @@
 .record-container {
-    display: flex; 
+    display: flex;
     margin: 2%;
     flex-wrap: wrap;
     justify-content: center;
@@ -28,4 +28,11 @@
 audio {
     margin-bottom: 10%;
     margin-top: 5%;
+}
+
+@media (max-width: 768px) {
+    .record-card {
+        width: 90%;
+        margin: 0 auto 3%;
+    }
 }

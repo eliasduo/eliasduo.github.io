@@ -1,5 +1,5 @@
 .concert-container {
-    display: flex; 
+    display: flex;
     margin: 2%;
     flex-wrap: wrap;
     align-items: center;
@@ -18,12 +18,10 @@
     margin-left: 2.5%;
     margin-bottom: 3%;
     border-radius: 5px;
-    /* background-color: firebrick; */
     background-color: black;
 }
 
 .concert-title {
-    /* color: white; */
     color: #CC9900;
     font-weight: 600;
     font-size: 18px;
@@ -34,4 +32,11 @@
 .concert-info {
     background-color: white;
     padding: 2%;
+}
+
+@media (max-width: 768px) {
+    .concert-card {
+        width: 90%;
+        margin: 0 auto 3%;
+    }
 }
