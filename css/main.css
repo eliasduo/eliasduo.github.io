@@ -17,7 +17,8 @@ body {
 }
 
 .doc-container {
-    position: relative;
+    display: flex;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -32,9 +33,7 @@ header {
 footer {
     background-color: black;
     padding: 1%;
-    margin-top: 100px;
-    position: absolute;
-    bottom: 0;
+    margin-top: auto;
     width: 100%;
 }
 
@@ -44,6 +43,7 @@ a {
 
 main {
     padding-bottom: 2%;
+    flex: 1;
 }
 
 .nav-item {
@@ -59,20 +59,33 @@ main {
 
 .rep-dropdown {
     display: inline-block;
+    position: relative;
 }
 
 .rep-content {
-    display: none;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
     position: absolute;
     background-color: black;
     border-radius: 5px;
     min-width: 200px;
+    z-index: 1000;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.rep-dropdown:hover .rep-content,
+.rep-dropdown:focus-within .rep-content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .rep-content a {
-    display: inline-block;
+    display: block;
     width: 100%;
-    padding: 5%;
+    padding: 8px 15px;
 }
 
 .brand {
@@ -89,10 +102,10 @@ main {
 }
 
 .container {
-    display: flex; 
+    display: flex;
 }
 
-.panel { 
+.panel {
     display: inline-block;
     width: 50%;
     margin: 5%;
@@ -105,4 +118,166 @@ main {
 
 #rep-drop {
     cursor: pointer;
+}
+
+/* Hamburger toggle - hidden on desktop */
+.nav-toggle-checkbox {
+    display: none;
+}
+
+.nav-toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 28px;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger-icon {
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    position: absolute;
+}
+
+.hamburger-icon::before {
+    top: -8px;
+}
+
+.hamburger-icon::after {
+    top: 8px;
+}
+
+/* ========== Tablet breakpoint ========== */
+@media (max-width: 768px) {
+    /* Show hamburger */
+    .nav-toggle-label {
+        display: block;
+    }
+
+    header {
+        flex-wrap: wrap;
+        padding: 8px;
+    }
+
+    /* Hide nav by default, show when checkbox checked */
+    nav {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .nav-toggle-checkbox:checked ~ nav {
+        display: flex;
+    }
+
+    /* Hamburger to X animation */
+    .nav-toggle-checkbox:checked ~ .nav-toggle-label .hamburger-icon {
+        background-color: transparent;
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-toggle-label .hamburger-icon::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle-checkbox:checked ~ .nav-toggle-label .hamburger-icon::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /* Stack nav items vertically */
+    .nav-item {
+        margin-right: 0;
+        padding: 10px 20px;
+    }
+
+    .brand {
+        font-size: 50px;
+    }
+
+    /* Repertoire dropdown: static, shown on focus-within */
+    .rep-dropdown {
+        display: block;
+        position: static;
+    }
+
+    .rep-content {
+        position: static;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease, max-height 0.3s ease;
+    }
+
+    .rep-dropdown:focus-within .rep-content {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        max-height: 300px;
+    }
+
+    .rep-content a {
+        padding: 8px 40px;
+    }
+
+    /* Card overrides */
+    .bio-card,
+    .concert-card,
+    .record-card,
+    .cd-card,
+    .rep-card {
+        width: 100% !important;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Tables */
+    table {
+        width: 100%;
+    }
+
+    /* iframes */
+    iframe {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 420 / 345;
+        min-height: 300px;
+    }
+}
+
+/* ========== Phone breakpoint ========== */
+@media (max-width: 480px) {
+    .brand {
+        font-size: 40px;
+    }
+
+    .panel {
+        width: 100%;
+        margin: 2%;
+    }
+
+    .nav-item {
+        padding: 8px 15px;
+        font-size: 18px;
+    }
 }

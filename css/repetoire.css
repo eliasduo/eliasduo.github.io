@@ -1,5 +1,5 @@
 .rep-container {
-    display: flex; 
+    display: flex;
     margin: 1%;
     flex-wrap: wrap;
     justify-content: center;
@@ -17,7 +17,6 @@
 }
 
 .rep-hdr {
-    /* color: firebrick; */
     color: black;
     margin: 2%;
     text-align: center;
@@ -44,4 +43,15 @@ tr {
 td {
     padding: 3%;
     border-radius: 1px;
+}
+
+@media (max-width: 768px) {
+    .rep-card {
+        width: 95%;
+        overflow-x: auto;
+    }
+
+    .rep-table {
+        font-size: 14px;
+    }
 }

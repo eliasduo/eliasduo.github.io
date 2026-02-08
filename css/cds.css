@@ -1,5 +1,5 @@
 .cd-container {
-    display: flex; 
+    display: flex;
     margin: 2%;
     flex-wrap: wrap;
     justify-content: center;
@@ -37,7 +37,6 @@
 }
 
 .cd-link {
-    /* color: firebrick; */
     color: #CC9900;
     text-decoration: underline;
     font-weight: bold;
@@ -45,4 +44,16 @@
 
 .cd-spotify {
     margin-top: 1%;
+}
+
+@media (max-width: 768px) {
+    .cd-card {
+        width: 90%;
+        margin: 0 auto 3%;
+    }
+
+    .cd-card img {
+        max-width: 100%;
+        height: auto;
+    }
 }
