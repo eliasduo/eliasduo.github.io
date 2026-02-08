@@ -1,14 +1,25 @@
 .rep-container {
     display: flex;
-    margin: 1%;
+    margin: 0;
+    padding: 2rem 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 }
 
 .rep-card {
     width: max-content;
-    padding: 3%;
+    padding: 2rem;
     text-align: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.rep-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .rep-table {
@@ -17,41 +28,58 @@
 }
 
 .rep-hdr {
-    color: black;
-    margin: 2%;
+    color: #1a1a1a;
+    margin: 2rem 0;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .rep-info {
     text-align: center;
+    color: #2C3E50;
 }
 
 .rep-title {
     font-weight: 600;
     text-align: center;
-    margin: 2%;
+    margin: 1.5rem 0;
+    color: #1a1a1a;
 }
 
 table {
     border-collapse: collapse;
+    background: white;
 }
 
 tr {
-    border: 0.5px solid black;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+tr:last-child {
+    border-bottom: none;
 }
 
 td {
-    padding: 3%;
-    border-radius: 1px;
+    padding: 1rem;
+    color: #2C3E50;
 }
 
 @media (max-width: 768px) {
     .rep-card {
-        width: 95%;
+        width: 100%;
         overflow-x: auto;
     }
 
     .rep-table {
-        font-size: 14px;
+        font-size: 0.875rem;
+    }
+
+    .rep-hdr {
+        font-size: 1.5rem;
+    }
+
+    td {
+        padding: 0.75rem;
     }
 }
