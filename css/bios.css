@@ -1,41 +1,70 @@
 .panel {
     width: 100%;
-    margin: 2.5%;
+    margin: 0;
+    padding: 2rem;
 }
 
 .bio-container {
-    margin: 2%;
+    margin: 0;
+    padding: 2rem 1rem;
 }
 
 .bio-text {
-    margin: 2%;
+    margin: 2rem 0;
+    line-height: 1.8;
+    color: #2C3E50;
+    font-size: 1.05rem;
 }
 
 .bio-img {
     align-self: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bio-img:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .bio-nameplate {
     text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 2rem 0;
+    color: #1a1a1a;
 }
 
 .bio-container {
     display: flex;
-    margin: 2%;
+    margin: 0;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 }
 
 .bio-card {
     width: max-content;
-    padding: 2%;
-    border-radius: 5px;
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.bio-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .record-hdr {
-    margin: 2%;
+    margin: 2rem 0;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 @media (max-width: 768px) {
@@ -46,5 +75,13 @@
 
     .bio-img {
         max-width: 80%;
+    }
+
+    .bio-nameplate {
+        font-size: 1.8rem;
+    }
+
+    .panel {
+        padding: 1rem;
     }
 }

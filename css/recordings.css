@@ -1,38 +1,58 @@
 .record-container {
     display: flex;
-    margin: 2%;
+    margin: 0;
+    padding: 2rem 1rem;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 2rem;
 }
 
 .record-card {
     width: max-content;
-    padding: 2%;
-    border-radius: 5px;
+    padding: 2rem;
+    border-radius: 8px;
     text-align: center;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.record-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .record-hdr {
-    margin: 2%;
+    margin: 2rem 0;
     text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 .record-info {
     text-align: center;
+    color: #2C3E50;
 }
 
 .record-title {
     font-weight: 600;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
 }
 
 audio {
-    margin-bottom: 10%;
-    margin-top: 5%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 @media (max-width: 768px) {
     .record-card {
-        width: 90%;
-        margin: 0 auto 3%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .record-hdr {
+        font-size: 1.5rem;
     }
 }

@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif, monospace;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
 html {
@@ -13,7 +14,9 @@ html {
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #F8F9FA;
+    color: #2C3E50;
+    line-height: 1.6;
 }
 
 .doc-container {
@@ -23,18 +26,21 @@ body {
 }
 
 header {
-    background-color: black;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5% 0% 0% 0.5%;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
 }
 
 footer {
-    background-color: black;
-    padding: 1%;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    padding: 2rem;
     margin-top: auto;
     width: 100%;
+    color: #E8E8E8;
+    font-size: 0.875rem;
 }
 
 a {
@@ -47,14 +53,16 @@ main {
 }
 
 .nav-item {
-    font-size: 20px;
-    color: white;
-    transition: all 0.3s ease 0s;
-    margin-right: 30px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #E8E8E8;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 2rem;
+    position: relative;
 }
 
 .nav-item:hover {
-    color: #CC9900;
+    color: #D4A574;
 }
 
 .rep-dropdown {
@@ -68,11 +76,12 @@ main {
     visibility: hidden;
     pointer-events: none;
     position: absolute;
-    background-color: black;
-    border-radius: 5px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 8px;
     min-width: 200px;
     z-index: 1000;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transition: opacity 0.2s ease, visibility 0.2s ease;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
 }
 
 .rep-dropdown:hover .rep-content,
@@ -89,16 +98,18 @@ main {
 }
 
 .brand {
-    transition: all 0.5s ease 0s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    font-size: 70px;
-    font-family: 'Corinthia', Georgia, monospace;
-    color: #F4F4F4;
+    font-size: 3rem;
+    font-family: 'Corinthia', serif;
+    color: #F8F9FA;
     text-align: center;
+    letter-spacing: 0.5px;
 }
 
 .brand:hover {
-    color: #CC9900;
+    color: #D4A574;
+    transform: scale(1.05);
 }
 
 .container {
@@ -112,8 +123,9 @@ main {
 }
 
 .active-item {
-    text-decoration: underline;
-    color: #CC9900;
+    color: #D4A574;
+    border-bottom: 2px solid #D4A574;
+    padding-bottom: 2px;
 }
 
 #rep-drop {

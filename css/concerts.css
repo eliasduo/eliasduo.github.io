@@ -1,42 +1,58 @@
 .concert-container {
     display: flex;
-    margin: 2%;
+    margin: 0;
+    padding: 2rem 1rem;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    gap: 2rem;
 }
 
 .gen-nameplate {
     text-align: center;
-    margin: 2%;
+    margin: 2rem 0;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
 }
 
 .concert-card {
-    border: 2px solid black;
     width: max-content;
-    margin-right: 2.5%;
-    margin-left: 2.5%;
-    margin-bottom: 3%;
-    border-radius: 5px;
-    background-color: black;
+    margin: 0;
+    border-radius: 8px;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.concert-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
 }
 
 .concert-title {
-    color: #CC9900;
+    color: #D4A574;
     font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 2.5%;
-    padding: 4%;
+    font-size: 1.1rem;
+    margin: 0;
+    padding: 1.5rem;
+    background: #F8F9FA;
 }
 
 .concert-info {
     background-color: white;
-    padding: 2%;
+    padding: 1.5rem;
+    color: #2C3E50;
 }
 
 @media (max-width: 768px) {
     .concert-card {
-        width: 90%;
-        margin: 0 auto 3%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .gen-nameplate {
+        font-size: 1.8rem;
     }
 }
